@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-mongodb":"systemctl start mongod"
+    "start-server":"npx json-server db.json --port 3000"
   },
   "author": "",
   "license": "ISC",

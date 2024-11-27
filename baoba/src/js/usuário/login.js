@@ -2,17 +2,18 @@ const loginForm = document.getElementById("login-form")
 const mailErrorMsg = document.getElementById("mail-error-msg")
 const passwordErrorMsg = document.getElementById("password-error-msg")
 
-// substituir pela logística do MongoDB
-// const JSONServerURL = 'https://api-pmv-si-2023-2-pe1-t1-doacao-reacao-pmv-json-server.vercel.app'
-// const accountsURL = `${JSONServerURL}/accounts`
-// const loggedPage = './home.html'
+const server_url = "http://localhost:3000"
 
-const accounts_hardcoded = [
-    {
-        mail: "teste@teste.com",
-        password: "Testee@123"
+const getAllUsers = async () => {
+    try {
+        const res = await fetch(`${server_url}/users`)
+        if (!res.ok) throw new Error("Erro ao buscar usuários.")
+        return await res.json()
+    } catch (error) {
+        console.error(error)
+        throw error
     }
-]
+}
 
 loginForm.addEventListener("submit", async (e) => {
     e.preventDefault()
@@ -23,7 +24,9 @@ loginForm.addEventListener("submit", async (e) => {
     const userMail = loginForm.email.value
     const password = loginForm.senha.value
 
-    const foundUser = accounts_hardcoded.find(account => account.mail === userMail)
+    const allUsers = await getAllUsers()
+    console.log(allUsers)
+    const foundUser = allUsers.find(account => account.email === userMail)
 
     if (!foundUser) {
         mailErrorMsg.style.opacity = 1
@@ -33,6 +36,6 @@ loginForm.addEventListener("submit", async (e) => {
         loginForm.senha.classList.add("input-error")
     } else {
         localStorage.setItem("user_id", foundUser.id)
-        location.replace(loggedPage)
+        location.replace('../index.html')
     }
 })

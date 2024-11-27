@@ -1,85 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Urso Polar</title>
-    <link rel="stylesheet" href="../reset.css" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <script src="../js/animais/animais.js"></script>
-  </head>
 
-  <body>
-    <script type="text/javascript">
-      getAnimalContext();
-    </script>
-    <header>
-      <img width="80" height="60" src="../img/logo.png" alt="Logo" />
-      <h1>Baobá</h1>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
-      <nav class="menu" id="navMenu">
-        <ul>
-          <li><a href="../index.html">Início</a></li>
-          <li><a href="#">Biomas</a></li>
-          <li><a href="animais.html">Animais</a></li>
-          <li><a href="ecoturismo.html">Ecoturismo</a></li>
-          <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="forum.html">Fórum</a></li>
-          <li><a href="animalRegister.html">Registro de Espécies</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Urso Polar</title>
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap"
+    rel="stylesheet" />
+  <script src="../js/animais/animais.js"></script>
+</head>
 
-    <main class="main">
-      <section class="animais__info animais__info-detail">
-        <section>
-          <div class="animais__info-text">
-            <h1 id="nome-animal">Urso Polar</h1>
-            <p id="descricao-animal"></p>
-          </div>
-        </section>
-        <div class="animais__info-img">
-          <img class="imagem" id="imagem-animal" src="" alt="" />
-        </div>
-      </section>
-
-      <section class="animais__tundra">
-        <script type="text/javascript">
-          setOthersAnimals();
-        </script>
-        <div class="animais__tundra-txt">
-          <h2>Outros animais em extinção deste Bioma</h2>
-        </div>
-        <div class="container-tundra" id="container-outros-animais"></div>
-      </section>
-    </main>
-  </body>
-
-  <script>
-    document.getElementById("hamburger").addEventListener("click", function () {
-      document.getElementById("navMenu").classList.toggle("active");
-    });
+<body>
+  <script type="text/javascript">
+    getAnimalContext();
   </script>
-  <footer>
-    <div class="redes-sociais">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-    </div>
-    <p>&copy; 2023 Baobá Team PUC. Todos os direitos reservados</p>
-  </footer>
+  <header>
+    <img width="80" height="60" src="../img/logo.png" alt="Logo" />
+    <h1>Baobá</h1>
+    <button class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="menu" id="navMenu">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="#">Biomas</a></li>
+        <li><a href="animais.html">Animais</a></li>
+        <li><a href="ecoturismo.html">Ecoturismo</a></li>
+        <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="forum.html">Fórum</a></li>
+        <li><a href="animalRegister.html">Registro de Espécies</a></li>
+      </ul>
+      <div id="user-menu-item" class="menu__user"></div>
+    </nav>
+    <script src="../src/js/user_menu_item.js"></script>
+  </header>
+
+  <main class="main">
+    <section class="animais__info animais__info-detail">
+      <section>
+        <div class="animais__info-text">
+          <h1 id="nome-animal">Urso Polar</h1>
+          <p id="descricao-animal"></p>
+        </div>
+      </section>
+      <div class="animais__info-img">
+        <img class="imagem" id="imagem-animal" src="" alt="" />
+      </div>
+    </section>
+
+    <section class="animais__tundra">
+      <script type="text/javascript">
+        setOthersAnimals();
+      </script>
+      <div class="animais__tundra-txt">
+        <h2>Outros animais em extinção deste Bioma</h2>
+      </div>
+      <div class="container-tundra" id="container-outros-animais"></div>
+    </section>
+  </main>
+</body>
+
+<script>
+  document.getElementById("hamburger").addEventListener("click", function () {
+    document.getElementById("navMenu").classList.toggle("active");
+  });
+</script>
+<footer>
+  <div class="redes-sociais">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <p>&copy; 2023 Baobá Team PUC. Todos os direitos reservados</p>
+</footer>
+
 </html>

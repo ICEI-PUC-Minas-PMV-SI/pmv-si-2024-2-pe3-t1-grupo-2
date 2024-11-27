@@ -1,111 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Queimadas</title>
-    <link rel="stylesheet" href="../reset.css" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap"
-      rel="stylesheet"
-    />
 
-    <script src="../js/queimadas/queimadas.js" ></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Queimadas</title>
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <header>
-      <img width="80" height="60" src="../img/logo.png" alt="Logo" />
-      <h1>Baobá</h1>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
-      <nav class="menu" id="navMenu">
-        <ul>
-          <li><a href="../index.html">Início</a></li>
-          <li><a href="biomas.html">Biomas</a></li>
-          <li><a href="animais.html">Animais</a></li>
-          <li><a href="ecoturismo.html">Ecoturismo</a></li>
-          <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="forum.html">Fórum</a></li>
-          <li><a href="desastres-naturais.html">Desastres Naturais</a></li>
-        </ul>
-      </nav>
-    </header>
+  <script src="../js/queimadas/queimadas.js"></script>
+</head>
 
-    <div class="queimadas__container">
-      <div class="queimadas__container__info-text">
-        <aside class="queimadas__info-text">
-          <h2>Queimadas</h2>
-          <p style="font-size: 14px;" >
-            As queimadas afetam gravemente a qualidade de vida humana, liberando
-            grandes quantidades de gases tóxicos e material particulado que
-            comprometem o ar e provocam problemas respiratórios, especialmente
-            em grupos vulneráveis. A poluição do ar, além de impactar a saúde,
-            interfere no clima e no ciclo das chuvas, piorando as condições
-            ambientais nas cidades e ampliando as ilhas de calor.
-          </p>
-        </aside>
-      </div>
+<body>
+  <header>
+    <img width="80" height="60" src="../img/logo.png" alt="Logo" />
+    <h1>Baobá</h1>
+    <button class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="menu" id="navMenu">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="biomas.html">Biomas</a></li>
+        <li><a href="animais.html">Animais</a></li>
+        <li><a href="ecoturismo.html">Ecoturismo</a></li>
+        <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="forum.html">Fórum</a></li>
+        <li><a href="desastres-naturais.html">Desastres Naturais</a></li>
+      </ul>
+      <div id="user-menu-item" class="menu__user"></div>
+    </nav>
+    <script src="../src/js/user_menu_item.js"></script>
+  </header>
 
-      <div class="queimadas__menu">
-        <div class="queimadas__img">
-          <img style="width: 600px; height: 200px;" src="../img/queimadas/queimadas1.png" />
-        </div>
-        <div class="queimadas__report__container">
-          <div class="d-flex justify-content-between mb-2">
-            <span>Reporte os focos de incêndio</span> 
-
-            <button class="queimadas__list__button" ><a  href="./list-fires-disasters.html">ver lista</a></button>
-          </div>
-          <div>
-            <span>Lembre-se de comunicar os bombeiros, depois adicione as informações aqui!</span>
-          </div>
-          
-          <form >
-            <div class="queimadas__inputs__container">
-              <div class="queimadas__input">
-                <label>cep</label>
-                  <input class="input-size" id="fire-cep" />
-              </div>
-              <div class="queimadas__input">
-                <label>intensidade</label>
-                <input class="input-size" id="fire-intensity" />
-              </div>
-              <div class="queimadas__input">
-                <label>descrição</label>
-                <input class="input-size" id="fire-description" />
-              </div>
-
-              <input style="display: none;" value="queimada" id="fire-type" >
-            </div>
-            
-            <div class="d-flex justify-content-end">
-              <button type="submit" class="queimadas__save__button" onclick="createFire()" >salvar</button>
-            </div>
-          </form>
-
-          
-        </div>
-      </div>
+  <div class="queimadas__container">
+    <div class="queimadas__container__info-text">
+      <aside class="queimadas__info-text">
+        <h2>Queimadas</h2>
+        <p style="font-size: 14px;">
+          As queimadas afetam gravemente a qualidade de vida humana, liberando
+          grandes quantidades de gases tóxicos e material particulado que
+          comprometem o ar e provocam problemas respiratórios, especialmente
+          em grupos vulneráveis. A poluição do ar, além de impactar a saúde,
+          interfere no clima e no ciclo das chuvas, piorando as condições
+          ambientais nas cidades e ampliando as ilhas de calor.
+        </p>
+      </aside>
     </div>
 
-    <footer>
-      <div class="redes-sociais">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+    <div class="queimadas__menu">
+      <div class="queimadas__img">
+        <img style="width: 600px; height: 200px;" src="../img/queimadas/queimadas1.png" />
       </div>
-      <p>&copy; 2023 Baobá Team PUC. Todos os direitos reservados</p>
-    </footer>
-  </body>
+      <div class="queimadas__report__container">
+        <div class="d-flex justify-content-between mb-2">
+          <span>Reporte os focos de incêndio</span>
+
+          <button class="queimadas__list__button"><a href="./list-fires-disasters.html">ver lista</a></button>
+        </div>
+        <div>
+          <span>Lembre-se de comunicar os bombeiros, depois adicione as informações aqui!</span>
+        </div>
+
+        <form>
+          <div class="queimadas__inputs__container">
+            <div class="queimadas__input">
+              <label>cep</label>
+              <input class="input-size" id="fire-cep" />
+            </div>
+            <div class="queimadas__input">
+              <label>intensidade</label>
+              <input class="input-size" id="fire-intensity" />
+            </div>
+            <div class="queimadas__input">
+              <label>descrição</label>
+              <input class="input-size" id="fire-description" />
+            </div>
+
+            <input style="display: none;" value="queimada" id="fire-type">
+          </div>
+
+          <div class="d-flex justify-content-end">
+            <button type="submit" class="queimadas__save__button" onclick="createFire()">salvar</button>
+          </div>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="redes-sociais">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2023 Baobá Team PUC. Todos os direitos reservados</p>
+  </footer>
+</body>
+
 </html>

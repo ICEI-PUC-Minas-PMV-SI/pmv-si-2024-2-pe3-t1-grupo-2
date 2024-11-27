@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lista de queimadas e desastres naturais</title>
-    <link rel="stylesheet" href="../reset.css" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap"
-      rel="stylesheet"
-    />
 
-    <script src="../js/desastres-naturais/fires-disasters.js" ></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lista de queimadas e desastres naturais</title>
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap"
+    rel="stylesheet" />
 
-  <body onload="loadItems()">
-    <header>
-      <img width="80" height="60" src="../img/logo.png" alt="Logo" />
-      <h1>Baobá</h1>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
-      <nav class="menu" id="navMenu">
-        <ul>
-          <li><a href="../index.html">Início</a></li>
-          <li><a href="biomas.html">Biomas</a></li>
-          <li><a href="animais.html">Animais</a></li>
-          <li><a href="ecoturismo.html">Ecoturismo</a></li>
-          <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="forum.html">Fórum</a></li>
-        </ul>
-      </nav>
-    </header>
+  <script src="../js/desastres-naturais/fires-disasters.js"></script>
+</head>
 
-    <h3 class="mt-4">Lista de queimadas e desastres naturais</h3>
-
-    <div class="list-items-disasters-container">
-      <ul id="list-items" class="list-items-disasters" >
-        
+<body onload="loadItems()">
+  <header>
+    <img width="80" height="60" src="../img/logo.png" alt="Logo" />
+    <h1>Baobá</h1>
+    <button class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="menu" id="navMenu">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="biomas.html">Biomas</a></li>
+        <li><a href="animais.html">Animais</a></li>
+        <li><a href="ecoturismo.html">Ecoturismo</a></li>
+        <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="forum.html">Fórum</a></li>
       </ul>
-    </div>
+      <div id="user-menu-item" class="menu__user"></div>
+    </nav>
+    <script src="../src/js/user_menu_item.js"></script>
+  </header>
 
-    <footer>
-      <div class="redes-sociais">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <p>&copy; 2023 Baobá Team PUC. Todos os direitos reservados</p>
-    </footer>
-  </body>
+  <h3 class="mt-4">Lista de queimadas e desastres naturais</h3>
+
+  <div class="list-items-disasters-container">
+    <ul id="list-items" class="list-items-disasters">
+
+    </ul>
+  </div>
+
+  <footer>
+    <div class="redes-sociais">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2023 Baobá Team PUC. Todos os direitos reservados</p>
+  </footer>
+</body>
+
 </html>

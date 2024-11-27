@@ -35,7 +35,9 @@
                     <li><a href="#">Sobre</a></li>
                     <li><a href="forum.html">Fórum</a></li>
                 </ul>
+                <div id="user-menu-item" class="menu__user"></div>
             </nav>
+            <script src="../src/js/user_menu_item.js"></script>
 
         </header>
 
@@ -67,9 +69,11 @@
                         </div>
                         <div class="form-group">
                             <label for="email">Confirme seu e-mail</label>
-                            <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirme seu e-mail" required>
+                            <input type="email" id="confirm-email" name="confirm-email"
+                                placeholder="Confirme seu e-mail" required>
                             <p class="required-message" id="confirm-email-required">Esse é um campo obrigatório!</p>
-                            <p class="confirmation-must-match-message" id="mail-confirmation">Os campos de e-mail e de confirmação devem ser iguais!
+                            <p class="confirmation-must-match-message" id="mail-confirmation">Os campos de e-mail e de
+                                confirmação devem ser iguais!
                             </p>
                         </div>
                         <div class="form-group">
@@ -87,9 +91,11 @@
                         </div>
                         <div class="form-group">
                             <label for="senha">Confirmar senha</label>
-                            <input type="password" id="confirma-senha" name="confirma-senha" placeholder="Confirme a senha" required>
+                            <input type="password" id="confirma-senha" name="confirma-senha"
+                                placeholder="Confirme a senha" required>
                             <p class="required-message" id="confirma-senha-required">Esse é um campo obrigatório!</p>
-                            <p class="confirmation-must-match-message" id="senha-confirmation">A senha e a confirmação devem ser iguais!</p>
+                            <p class="confirmation-must-match-message" id="senha-confirmation">A senha e a confirmação
+                                devem ser iguais!</p>
                         </div>
                         <button class="button btn-custom" type="submit" id="login-form-enter">Criar conta</button>
                     </form>

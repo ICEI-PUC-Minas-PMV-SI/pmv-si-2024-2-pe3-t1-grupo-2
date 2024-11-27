@@ -1,188 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="stylesheet" />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, inicial-scale=1.0" />
-    <title>Sustentabilidade</title>
-    <link rel="stylesheet" href="../reset.css" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <link rel="stylesheet" />
 
-    <script>
-      window.addEventListener(
-        "message",
-        function (event) {
-          if (event.origin === "http://exemplo.com") {
-            const iframe = document.getElementById("meuIframe");
-            if (event.data.frameHeight) {
-              iframe.style.height = event.data.frameHeight + "px";
-            }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, inicial-scale=1.0" />
+  <title>Sustentabilidade</title>
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap"
+    rel="stylesheet" />
+
+  <script>
+    window.addEventListener(
+      "message",
+      function (event) {
+        if (event.origin === "http://exemplo.com") {
+          const iframe = document.getElementById("meuIframe");
+          if (event.data.frameHeight) {
+            iframe.style.height = event.data.frameHeight + "px";
           }
-        },
-        false
-      );
-    </script>
-  </head>
+        }
+      },
+      false
+    );
+  </script>
+</head>
 
-  <body>
-    <header>
-      <img width="80" height="60" src="../img/logo.png" alt="Logo" />
-      <h1>Baobá</h1>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
-      <nav class="menu" id="navMenu">
-        <ul>
-          <li><a href="../index.html">Início</a></li>
-          <li><a href="#">Biomas</a></li>
-          <li><a href="animais.html">Animais</a></li>
-          <li><a href="ecoturismo.html">Ecoturismo</a></li>
-          <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="forum.html">Fórum</a></li>
-          <li><a href="animalRegister.html">Registro de Espécies</a></li>
-        </ul>
-      </nav>
-      
-    </header>
-    <main>
-      <div class="main-card-sus">
-        <div class="text-and-image-sus">
-          <div class="text-sus">
-            <h1>Sustentabilidade Empresarial</h1>
-            <p>
-              A sustentabilidade empresarial refere-se à prática de administrar
-              uma empresa de forma a equilibrar seus objetivos financeiros com
-              considerações sociais e ambientais. É um conceito que reconhece
-              que as empresas têm um impacto significativo no meio ambiente e na
-              sociedade, e busca minimizar esse impacto negativo, ao mesmo tempo
-              em que busca contribuir para o bem-estar da comunidade e a
-              longevidade dos negócios.
-            </p>
-          </div>
-          <div class="image-sus">
-            <img
-              src="../img/sustentabilidade/economia.jpg"
-              alt="Sustentabilidade Img"
-            />
-          </div>
+<body>
+  <header>
+    <img width="80" height="60" src="../img/logo.png" alt="Logo" />
+    <h1>Baobá</h1>
+    <button class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="menu" id="navMenu">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="#">Biomas</a></li>
+        <li><a href="animais.html">Animais</a></li>
+        <li><a href="ecoturismo.html">Ecoturismo</a></li>
+        <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="forum.html">Fórum</a></li>
+        <li><a href="animalRegister.html">Registro de Espécies</a></li>
+      </ul>
+      <div id="user-menu-item" class="menu__user"></div>
+    </nav>
+    <script src="../src/js/user_menu_item.js"></script>
+
+  </header>
+  <main>
+    <div class="main-card-sus">
+      <div class="text-and-image-sus">
+        <div class="text-sus">
+          <h1>Sustentabilidade Empresarial</h1>
+          <p>
+            A sustentabilidade empresarial refere-se à prática de administrar
+            uma empresa de forma a equilibrar seus objetivos financeiros com
+            considerações sociais e ambientais. É um conceito que reconhece
+            que as empresas têm um impacto significativo no meio ambiente e na
+            sociedade, e busca minimizar esse impacto negativo, ao mesmo tempo
+            em que busca contribuir para o bem-estar da comunidade e a
+            longevidade dos negócios.
+          </p>
+        </div>
+        <div class="image-sus">
+          <img src="../img/sustentabilidade/economia.jpg" alt="Sustentabilidade Img" />
         </div>
       </div>
-      <div class="caixa-texto">
-        <h2>Aspectos-chave da responsabilidade ambiental empresarial</h2>
-        <ol>
-          <li>
-            <b>Gestão de resíduos:</b> Empresas responsáveis ambientalmente
-            buscam minimizar a geração de resíduos e implementam estratégias
-            para a reciclagem e disposição adequada dos resíduos produzidos.
-            Isso pode incluir a redução de embalagens desnecessárias e o uso de
-            materiais recicláveis.
-          </li>
-          <li>
-            <b>Eficiência energética:</b> As empresas procuram reduzir o consumo
-            de energia por meio de práticas como a adoção de tecnologias mais
-            eficientes, a otimização de processos e a utilização de fontes de
-            energia renovável sempre que possível.
-          </li>
-          <li>
-            <b>Redução de emissões de carbono:</b> Muitas empresas estão
-            comprometidas em reduzir suas emissões de gases de efeito estufa,
-            seja diminuindo sua pegada de carbono direta (por exemplo, reduzindo
-            o consumo de combustíveis fósseis) ou indireta (por exemplo, por
-            meio de cadeias de suprimentos mais sustentáveis).
-          </li>
-          <li>
-            <b>Conservação da água:</b> Empresas responsáveis ambientalmente
-            adotam medidas para conservar a água, reduzir o desperdício e
-            proteger as fontes de água locais.
-          </li>
-          <li>
-            <b>Desenvolvimento sustentável:</b> Empresas podem contribuir para o
-            desenvolvimento sustentável de comunidades locais e regionais, por
-            exemplo, apoiando projetos de conservação, iniciativas de educação
-            ambiental ou programas de reflorestamento.
-          </li>
-          <li>
-            <b>Conformidade regulatória:</b> Empresas devem cumprir as leis e
-            regulamentações ambientais aplicáveis em suas jurisdições e setores
-            de atuação. Além disso, muitas empresas adotam padrões voluntários
-            mais rigorosos, como certificações ambientais, para demonstrar seu
-            compromisso com a responsabilidade ambiental.
-          </li>
-          <li>
-            <b>Inovação verde:</b> Muitas empresas buscam inovar em produtos e
-            processos para torná-los mais ecologicamente sustentáveis. Isso pode
-            envolver a criação de produtos com menor impacto ambiental ou a
-            busca por soluções tecnológicas mais limpas.
-          </li>
-          <li>
-            <b>Transparência e prestação de contas:</b> Empresas responsáveis
-            ambientalmente geralmente comunicam suas ações e progresso ambiental
-            por meio de relatórios de sustentabilidade e divulgam informações
-            sobre seu desempenho ambiental de forma transparente.
-          </li>
-          <li>
-            <b>Desenvolvimento sustentável:</b> Empresas podem contribuir para o
-            desenvolvimento sustentável de comunidades locais e regionais, por
-            exemplo, apoiando projetos de conservação, iniciativas de educação
-            ambiental ou programas de reflorestamento.
-          </li>
-        </ol>
-      </div>
-      <div>
-        <img
-          class="imagem-meio"
-          src="../img/sustentabilidade/sustentabilidade-empresarial.png"
-          alt="sustentabilidade empresarial"
-        />
-      </div>
-      <div class="texto-final">
-        <p>
-          A responsabilidade ambiental empresarial não apenas contribui para a
-          conservação do meio ambiente, mas também pode melhorar a reputação da
-          empresa, atrair clientes que valorizam a sustentabilidade e ajudar a
-          evitar riscos legais e regulatórios associados a práticas
-          ambientalmente prejudiciais. Portanto, é considerada uma parte
-          essencial das estratégias de negócios modernas
-        </p>
-      </div>
+    </div>
+    <div class="caixa-texto">
+      <h2>Aspectos-chave da responsabilidade ambiental empresarial</h2>
+      <ol>
+        <li>
+          <b>Gestão de resíduos:</b> Empresas responsáveis ambientalmente
+          buscam minimizar a geração de resíduos e implementam estratégias
+          para a reciclagem e disposição adequada dos resíduos produzidos.
+          Isso pode incluir a redução de embalagens desnecessárias e o uso de
+          materiais recicláveis.
+        </li>
+        <li>
+          <b>Eficiência energética:</b> As empresas procuram reduzir o consumo
+          de energia por meio de práticas como a adoção de tecnologias mais
+          eficientes, a otimização de processos e a utilização de fontes de
+          energia renovável sempre que possível.
+        </li>
+        <li>
+          <b>Redução de emissões de carbono:</b> Muitas empresas estão
+          comprometidas em reduzir suas emissões de gases de efeito estufa,
+          seja diminuindo sua pegada de carbono direta (por exemplo, reduzindo
+          o consumo de combustíveis fósseis) ou indireta (por exemplo, por
+          meio de cadeias de suprimentos mais sustentáveis).
+        </li>
+        <li>
+          <b>Conservação da água:</b> Empresas responsáveis ambientalmente
+          adotam medidas para conservar a água, reduzir o desperdício e
+          proteger as fontes de água locais.
+        </li>
+        <li>
+          <b>Desenvolvimento sustentável:</b> Empresas podem contribuir para o
+          desenvolvimento sustentável de comunidades locais e regionais, por
+          exemplo, apoiando projetos de conservação, iniciativas de educação
+          ambiental ou programas de reflorestamento.
+        </li>
+        <li>
+          <b>Conformidade regulatória:</b> Empresas devem cumprir as leis e
+          regulamentações ambientais aplicáveis em suas jurisdições e setores
+          de atuação. Além disso, muitas empresas adotam padrões voluntários
+          mais rigorosos, como certificações ambientais, para demonstrar seu
+          compromisso com a responsabilidade ambiental.
+        </li>
+        <li>
+          <b>Inovação verde:</b> Muitas empresas buscam inovar em produtos e
+          processos para torná-los mais ecologicamente sustentáveis. Isso pode
+          envolver a criação de produtos com menor impacto ambiental ou a
+          busca por soluções tecnológicas mais limpas.
+        </li>
+        <li>
+          <b>Transparência e prestação de contas:</b> Empresas responsáveis
+          ambientalmente geralmente comunicam suas ações e progresso ambiental
+          por meio de relatórios de sustentabilidade e divulgam informações
+          sobre seu desempenho ambiental de forma transparente.
+        </li>
+        <li>
+          <b>Desenvolvimento sustentável:</b> Empresas podem contribuir para o
+          desenvolvimento sustentável de comunidades locais e regionais, por
+          exemplo, apoiando projetos de conservação, iniciativas de educação
+          ambiental ou programas de reflorestamento.
+        </li>
+      </ol>
+    </div>
+    <div>
+      <img class="imagem-meio" src="../img/sustentabilidade/sustentabilidade-empresarial.png"
+        alt="sustentabilidade empresarial" />
+    </div>
+    <div class="texto-final">
+      <p>
+        A responsabilidade ambiental empresarial não apenas contribui para a
+        conservação do meio ambiente, mas também pode melhorar a reputação da
+        empresa, atrair clientes que valorizam a sustentabilidade e ajudar a
+        evitar riscos legais e regulatórios associados a práticas
+        ambientalmente prejudiciais. Portanto, é considerada uma parte
+        essencial das estratégias de negócios modernas
+      </p>
+    </div>
 
-      <iframe
-        src="../pages/componente-empresas.html"
-        width="100%"
-        scrolling="no"
-        frameborder="0"
-      >
-      </iframe>
-    </main>
-    <br />
-    <br />
-    <script>
-      document
-        .getElementById("hamburger")
-        .addEventListener("click", function () {
-          document.getElementById("navMenu").classList.toggle("active");
-        });
-    </script>
-    <footer>
-      <div class="redes-sociais">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <p>&copy; 2023 Baobá Team PUC. Todos os direitos reservados</p>
-    </footer>
-  </body>
+    <iframe src="../pages/componente-empresas.html" width="100%" scrolling="no" frameborder="0">
+    </iframe>
+  </main>
+  <br />
+  <br />
+  <script>
+    document
+      .getElementById("hamburger")
+      .addEventListener("click", function () {
+        document.getElementById("navMenu").classList.toggle("active");
+      });
+  </script>
+  <footer>
+    <div class="redes-sociais">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2023 Baobá Team PUC. Todos os direitos reservados</p>
+  </footer>
+</body>
+
 </html>

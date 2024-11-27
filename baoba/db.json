@@ -719,5 +719,21 @@
       "description": "terremoto",
       "type": "desastre natural"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "João",
+      "lastname": "Silva",
+      "email": "joao.silva@mail.com",
+      "password": "Teste@123"
+    },
+    {
+      "id": 2,
+      "name": "Vítor",
+      "lastname": "Francisco",
+      "email": "vcreis.f@mail.com",
+      "password": "Teste@1234"
+    }
   ]
 }

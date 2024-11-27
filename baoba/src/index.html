@@ -1,128 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home</title>
-    <link rel="stylesheet" href="src/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="../src/js/pesquisa/pesquisa.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <img width="80px" height="60px" src="../public/static/img/logo.png" alt="Logo" />
-      <h1 class="header__title">Baobá</h1>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
-      <nav class="menu" id="navMenu">
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="./pages/sobre.html">Sobre</a></li>
-          <li><a href="./pages/forum.html">Fórum</a></li>
-          <li><a href="./pages/queimadas.html">Queimadas</a></li>
-        </ul>
-      </nav>
-      
-    </header>
-    <main class="home__main">
-      <div class="home__info">
-        <div class="home__info-text">
-          <p>
-            O Baobá é uma árvore antiga, nativa do continente africano. É
-            chamada de árvore da vida, pois resiste a um ecossistema pouco
-            fértil e bastante seco. Este é o nome do nosso projeto por
-            representar a perseverança na adversidade da crise climática, a
-            resiliência e possibilidade de renovação, o que reflete um paralelo
-            com todo o meio ambiente e a chance de sua recuperação se tomarmos
-            ações para preservação de nossa fauna e flora.
-          </p>
-        </div>
-        <div id="imagem-baoba">
-          <img
-            width="200px"
-            height="180px"
-            class="imagem"
-            src="../public/static/img/home/baobab-desktop-inicial.jpg"
-            alt="Baoba1"
-          />
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+  <link rel="stylesheet" href="src/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="../src/js/pesquisa/pesquisa.js"></script>
+</head>
 
-      <div class="home__topics">
-        <div class="home__topics-container">
-          <a href="./pages/biomas.html">
-            <div>
-              <img
-                style="height: 110px; width: 150px"
-                src="../public/static/img/home/biomas.png"
-              />
-            </div>
-            <span>Biomas</span>
-          </a>
-        </div>
-        <div class="home__topics-container">
-          <a href="./pages/animais.html">
-            <div>
-              <img
-                style="height: 110px; width: 150px"
-                src="../public/static/img/home/arara.png"
-              />
-            </div>
-            <span>Animais</span>
-          </a>
-        </div>
-        <div class="home__topics-container">
-          <a href="./pages/ecoturismo.html">
-            <div>
-              <img
-                style="height: 110px; width: 150px"
-                src="../public/static/img/home/ecoturismo.png"
-              />
-            </div>
-            <span>Ecoturismo</span>
-          </a>
-        </div>
-        <div class="home__topics-container">
-          <a href="./pages/sustentabilidade.html">
-            <div>
-              <img
-                style="height: 110px; width: 150px"
-                src="../public/static/img/home/sustent.png"
-              />
-            </div>
-            <span>Sustentabilidade</span>
-          </a>
-        </div>
+<body>
+  <header>
+    <img width="80px" height="60px" src="../public/static/img/logo.png" alt="Logo" />
+    <h1 class="header__title">Baobá</h1>
+    <button class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="menu" id="navMenu">
+      <ul class="menu__items">
+        <li><a href="#">Início</a></li>
+        <li><a href="./pages/sobre.html">Sobre</a></li>
+        <li><a href="./pages/forum.html">Fórum</a></li>
+        <li><a href="./pages/queimadas.html">Queimadas</a></li>
+      </ul>
+      <div id="user-menu-item" class="menu__user"></div>
+    </nav>
+    <script src="../src/js/user_menu_item.js"></script>
+  </header>
+  <main class="home__main">
+    <div class="home__info">
+      <div class="home__info-text">
+        <p>
+          O Baobá é uma árvore antiga, nativa do continente africano. É
+          chamada de árvore da vida, pois resiste a um ecossistema pouco
+          fértil e bastante seco. Este é o nome do nosso projeto por
+          representar a perseverança na adversidade da crise climática, a
+          resiliência e possibilidade de renovação, o que reflete um paralelo
+          com todo o meio ambiente e a chance de sua recuperação se tomarmos
+          ações para preservação de nossa fauna e flora.
+        </p>
       </div>
-    </main>
-    <script>
-      document
-        .getElementById("hamburger")
-        .addEventListener("click", function () {
-          document.getElementById("navMenu").classList.toggle("active");
-        });
-    </script>
-    <footer>
-      <div class="redes-sociais">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+      <div id="imagem-baoba">
+        <img width="200px" height="180px" class="imagem" src="../public/static/img/home/baobab-desktop-inicial.jpg"
+          alt="Baoba1" />
       </div>
-      <p>&copy; 2023 Baobá Team PUC. Todos os direitos reservados</p>
-    </footer>
-  </body>
+    </div>
+
+    <div class="home__topics">
+      <div class="home__topics-container">
+        <a href="./pages/biomas.html">
+          <div>
+            <img style="height: 110px; width: 150px" src="../public/static/img/home/biomas.png" />
+          </div>
+          <span>Biomas</span>
+        </a>
+      </div>
+      <div class="home__topics-container">
+        <a href="./pages/animais.html">
+          <div>
+            <img style="height: 110px; width: 150px" src="../public/static/img/home/arara.png" />
+          </div>
+          <span>Animais</span>
+        </a>
+      </div>
+      <div class="home__topics-container">
+        <a href="./pages/ecoturismo.html">
+          <div>
+            <img style="height: 110px; width: 150px" src="../public/static/img/home/ecoturismo.png" />
+          </div>
+          <span>Ecoturismo</span>
+        </a>
+      </div>
+      <div class="home__topics-container">
+        <a href="./pages/sustentabilidade.html">
+          <div>
+            <img style="height: 110px; width: 150px" src="../public/static/img/home/sustent.png" />
+          </div>
+          <span>Sustentabilidade</span>
+        </a>
+      </div>
+    </div>
+  </main>
+  <script>
+    document
+      .getElementById("hamburger")
+      .addEventListener("click", function () {
+        document.getElementById("navMenu").classList.toggle("active");
+      });
+  </script>
+  <footer>
+    <div class="redes-sociais">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2023 Baobá Team PUC. Todos os direitos reservados</p>
+  </footer>
+</body>
+
 </html>

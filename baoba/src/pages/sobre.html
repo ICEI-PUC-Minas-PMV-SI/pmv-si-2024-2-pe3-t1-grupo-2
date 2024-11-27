@@ -1,116 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sobre</title>
-    <link rel="stylesheet" href="../reset.css" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <img width="80" height="60" src="../img/logo.png" alt="Logo" />
-      <h1>Baobá</h1>
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
-      <nav class="menu" id="navMenu">
-        <ul>
-          <li><a href="../index.html">Início</a></li>
-          <li><a href="#">Biomas</a></li>
-          <li><a href="animais.html">Animais</a></li>
-          <li><a href="ecoturismo.html">Ecoturismo</a></li>
-          <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="forum.html">Fórum</a></li>
-          <li><a href="animalRegister.html">Registro de Espécies</a></li>
-        </ul>
-      </nav>
-     
-    </header>
-    <main>
-      <section class="sobre__info">
-        <div class="sobre__info-img">
-          <img
-            width="400"
-            height="380"
-            class="imagem"
-            src="../img/home/baoba_sobre.jpg"
-            alt="Baoba_sobre"
-          />
-        </div>
-        <section>
-          <div class="sobre__info-text">
-            <h1>Sobre nós</h1>
-            <p>
-              O Baobá é uma plataforma dedicada à sensibilização sobre crises
-              ecológicas, espécies ameaçadas e biomas vulneráveis. Utilizando
-              dados científicos rigorosos, buscamos educar, informar e
-              impulsionar ações proativas, incentivando o ecoturismo responsável
-              e a adoção de práticas sustentáveis. Estamos empenhados em tornar
-              a conservação da biodiversidade uma questão global, prioritária e
-              contínua.
-            </p>
-            <p>
-              Nos dedicamos a fornecer informações detalhadas sobre crises
-              ecológicas e a biodiversidade em risco, buscando aumentar a
-              conscientização e impulsionar ações em defesa da vida no planeta.
-            </p>
-          </div>
 
-          <div class="sobre__info-text colorida">
-            <h2>Nossos Valores</h2>
-            <ul>
-              <li>
-                Baseamos nossas informações em pesquisas científicas, prezando
-                sempre pela verdade.
-              </li>
-              <li>
-                Trabalhamos para aumentar a percepção do valor da biodiversidade
-                e dos perigos da extinção.
-              </li>
-              <li>
-                Mantemos nossa informação atualizada, priorizando adaptabilidade
-                e crescimento.
-              </li>
-              <li>
-                Encorajamos todos os segmentos da sociedade a se juntar à causa
-                da preservação.
-              </li>
-            </ul>
-            <p>
-              A cada passo, mantemos firme nossa dedicação em informar, inspirar
-              e mobilizar pessoas em prol da saúde e bem-estar do nosso planeta.
-            </p>
-          </div>
-        </section>
-      </section>
-    </main>
-    <script>
-      document
-        .getElementById("hamburger")
-        .addEventListener("click", function () {
-          document.getElementById("navMenu").classList.toggle("active");
-        });
-    </script>
-    <footer>
-      <div class="redes-sociais">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre</title>
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <img width="80" height="60" src="../img/logo.png" alt="Logo" />
+    <h1>Baobá</h1>
+    <button class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="menu" id="navMenu">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="#">Biomas</a></li>
+        <li><a href="animais.html">Animais</a></li>
+        <li><a href="ecoturismo.html">Ecoturismo</a></li>
+        <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="forum.html">Fórum</a></li>
+        <li><a href="animalRegister.html">Registro de Espécies</a></li>
+      </ul>
+      <div id="user-menu-item" class="menu__user"></div>
+    </nav>
+    <script src="../src/js/user_menu_item.js"></script>
+
+  </header>
+  <main>
+    <section class="sobre__info">
+      <div class="sobre__info-img">
+        <img width="400" height="380" class="imagem" src="../img/home/baoba_sobre.jpg" alt="Baoba_sobre" />
       </div>
-      <p>&copy; 2023 Baobá Team PUC. Todos os direitos reservados</p>
-    </footer>
-  </body>
+      <section>
+        <div class="sobre__info-text">
+          <h1>Sobre nós</h1>
+          <p>
+            O Baobá é uma plataforma dedicada à sensibilização sobre crises
+            ecológicas, espécies ameaçadas e biomas vulneráveis. Utilizando
+            dados científicos rigorosos, buscamos educar, informar e
+            impulsionar ações proativas, incentivando o ecoturismo responsável
+            e a adoção de práticas sustentáveis. Estamos empenhados em tornar
+            a conservação da biodiversidade uma questão global, prioritária e
+            contínua.
+          </p>
+          <p>
+            Nos dedicamos a fornecer informações detalhadas sobre crises
+            ecológicas e a biodiversidade em risco, buscando aumentar a
+            conscientização e impulsionar ações em defesa da vida no planeta.
+          </p>
+        </div>
+
+        <div class="sobre__info-text colorida">
+          <h2>Nossos Valores</h2>
+          <ul>
+            <li>
+              Baseamos nossas informações em pesquisas científicas, prezando
+              sempre pela verdade.
+            </li>
+            <li>
+              Trabalhamos para aumentar a percepção do valor da biodiversidade
+              e dos perigos da extinção.
+            </li>
+            <li>
+              Mantemos nossa informação atualizada, priorizando adaptabilidade
+              e crescimento.
+            </li>
+            <li>
+              Encorajamos todos os segmentos da sociedade a se juntar à causa
+              da preservação.
+            </li>
+          </ul>
+          <p>
+            A cada passo, mantemos firme nossa dedicação em informar, inspirar
+            e mobilizar pessoas em prol da saúde e bem-estar do nosso planeta.
+          </p>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script>
+    document
+      .getElementById("hamburger")
+      .addEventListener("click", function () {
+        document.getElementById("navMenu").classList.toggle("active");
+      });
+  </script>
+  <footer>
+    <div class="redes-sociais">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2023 Baobá Team PUC. Todos os direitos reservados</p>
+  </footer>
+</body>
+
 </html>

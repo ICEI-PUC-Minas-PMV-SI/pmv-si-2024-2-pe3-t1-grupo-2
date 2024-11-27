@@ -7,7 +7,7 @@
   <title>Meu Usuário</title>
   <link rel="stylesheet" href="../reset.css" />
   <link rel="stylesheet" href="../styles.css" />
-  <link rel="stylesheet" href="../css/meu-usuario.css" />
+  <link rel="stylesheet" href="../css/login-signup.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
   <header>
     <img width="80" height="60" src="../img/logo.png" alt="Logo" />
     <h1>Baobá</h1>
@@ -34,9 +33,7 @@
         <li><a href="#">Sobre</a></li>
         <li><a href="forum.html">Fórum</a></li>
       </ul>
-      <div id="user-menu-item" class="menu__user"></div>
     </nav>
-    <script src="../src/js/user_menu_item.js"></script>
   </header>
 
   <div style="height: 10vh;"></div>
@@ -45,45 +42,9 @@
     <div class="login-box main">
       <div class="login-interface">
         <h1>Informações do Usuário</h1>
-        <p>Carregando...</p>
-
         <div id="user-details" class="user-info"></div>
 
-        <script>
-          // Função para carregar as informações do usuário
-          async function loadUserInfo() {
-            const userId = localStorage.getItem("user_id");
-            const userDetailsContainer = document.getElementById("user-details");
-
-            if (!userId) {
-              userDetailsContainer.innerHTML = "<p>Usuário não encontrado.</p>";
-              return;
-            }
-
-            try {
-              const response = await fetch(`http://localhost:3000/users/${userId}`);
-              if (!response.ok) throw new Error("Usuário não encontrado.");
-
-              const user = await response.json();
-              userDetailsContainer.innerHTML = `
-                <p><strong>Username:</strong> ${user.username}</p>
-                <p><strong>Nome:</strong> ${user.first_name}</p>
-                <p><strong>Sobrenome:</strong> ${user.last_name}</p>
-              `;
-            } catch (error) {
-              userDetailsContainer.innerHTML = "<p>Erro ao carregar informações do usuário.</p>";
-              console.error(error);
-            }
-          }
-
-          // Carregar as informações do usuário ao carregar a página
-          loadUserInfo();
-
-          // Ativar botão hambúrguer
-          document.getElementById("hamburger").addEventListener("click", function () {
-            document.getElementById("navMenu").classList.toggle("active");
-          });
-        </script>
+        <script src = "../js/usuário/meu-usuario.js"></script>
       </div>
     </div>
   </main>

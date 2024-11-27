@@ -2321,6 +2321,10 @@ header .menu {
     color: #426b1f;
 }
 
+.menu__user {
+    margin-left: auto;
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
