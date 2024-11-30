@@ -1,6 +1,6 @@
           // Função para carregar as informações do usuário
           async function loadUserInfo() {
-            const userId = localStorage.getItem("user_id")
+            const userId = localStorage.getItem("user_id_baoba")
             const userDetailsContainer = document.getElementById("user-details")
 
             if (!userId) {

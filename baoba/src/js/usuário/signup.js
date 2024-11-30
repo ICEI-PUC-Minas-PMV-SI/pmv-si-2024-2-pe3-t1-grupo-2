@@ -89,7 +89,7 @@ signup_form.addEventListener("submit", async (e) => {
     }
 
     try {
-        await createUser({ id: ++ allUsers.length, name, lastname, email, password })
+        await createUser({ id: String(++allUsers.length), name, lastname, email, password })
         alert("Usuário cadastrado com sucesso!")
         location.replace("./login.html")
     } catch (error) {

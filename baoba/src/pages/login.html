@@ -1,97 +1,68 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Meu Usuário</title>
+  <title>Login</title>
   <link rel="stylesheet" href="../reset.css" />
   <link rel="stylesheet" href="../styles.css" />
-  <link rel="stylesheet" href="../css/meu-usuario.css" />
+  <link rel="stylesheet" href="../css/login-signup.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@500&family=Raleway:wght@600&display=swap"
-    rel="stylesheet" />
-</head>
 
 <body>
 
-  <header>
-    <img width="80" height="60" src="../img/logo.png" alt="Logo" />
-    <h1>Baobá</h1>
-    <button class="hamburger" id="hamburger">
-      <i class="fas fa-bars"></i>
-    </button>
-    <nav class="menu" id="navMenu">
-      <ul>
-        <li><a href="../index.html">Início</a></li>
-        <li><a href="biomas.html">Biomas</a></li>
-        <li><a href="animais.html">Animais</a></li>
-        <li><a href="ecoturismo.html">Ecoturismo</a></li>
-        <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="forum.html">Fórum</a></li>
-      </ul>
-      <div id="user-menu-item" class="menu__user"></div>
-    </nav>
-    <script src="../src/js/user_menu_item.js"></script>
-  </header>
+  <body>
+    <header>
+      <img width="80" height="60" src="../img/logo.png" alt="Logo" />
+      <h1>Baobá</h1>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="menu" id="navMenu">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="biomas.html">Biomas</a></li>
+          <li><a href="animais.html">Animais</a></li>
+          <li><a href="ecoturismo.html">Ecoturismo</a></li>
+          <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="forum.html">Fórum</a></li>
+        </ul>
+        <div id="user-menu-item" class="menu__user"></div>
+      </nav>
+      <script src="../src/js/user_menu_item.js"></script>
 
-  <div style="height: 10vh;"></div>
+    </header>
 
-  <main class="main">
-    <div class="login-box main">
-      <div class="login-interface">
-        <h1>Informações do Usuário</h1>
-        <p>Carregando...</p>
+    <div style="height: 10vh;"></div>
 
-        <div id="user-details" class="user-info"></div>
-
-        <script>
-          // Função para carregar as informações do usuário
-          async function loadUserInfo() {
-            const userId = localStorage.getItem("user_id");
-            const userDetailsContainer = document.getElementById("user-details");
-
-            if (!userId) {
-              userDetailsContainer.innerHTML = "<p>Usuário não encontrado.</p>";
-              return;
-            }
-
-            try {
-              const response = await fetch(`http://localhost:3000/users/${userId}`);
-              if (!response.ok) throw new Error("Usuário não encontrado.");
-
-              const user = await response.json();
-              userDetailsContainer.innerHTML = `
-                <p><strong>Username:</strong> ${user.username}</p>
-                <p><strong>Nome:</strong> ${user.first_name}</p>
-                <p><strong>Sobrenome:</strong> ${user.last_name}</p>
-              `;
-            } catch (error) {
-              userDetailsContainer.innerHTML = "<p>Erro ao carregar informações do usuário.</p>";
-              console.error(error);
-            }
-          }
-
-          // Carregar as informações do usuário ao carregar a página
-          loadUserInfo();
-
-          // Ativar botão hambúrguer
-          document.getElementById("hamburger").addEventListener("click", function () {
-            document.getElementById("navMenu").classList.toggle("active");
-          });
-        </script>
+    <main class="main">
+      <div class="login-box main">
+        <div class="login-interface">
+          <h1>Login</h1>
+          <p>Bem-vindo de volta! Faça login preenchendo os campos abaixo</p>
+          <p></p>
+          <form id="login-form">
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+              <p class="error-message" id="mail-error-msg">Usuário com esse e-mail não encontrado!</p>
+            </div>
+            <div class="form-group">
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" name="senha" placeholder="Senha" required>
+              <p class="error-message" id="password-error-msg">Essa senha não pertence a esse usuário!</p>
+            </div>
+            <button class="button btn-custom" type="submit" id="login-form-enter">Entrar</button>
+          </form>
+          <p class="switch-link">Não tem uma conta? <a href="./sign-up.html">Cadastre-se!</a></p>
+        </div>
       </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <p>© 2024 Baobá - Todos os direitos reservados.</p>
-  </footer>
-
-</body>
+    </main>
+    <footer class="footer">
+      <p>© 2024 Baobá - Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/usuário/login.js"></script>
+  </body>
 
 </html>

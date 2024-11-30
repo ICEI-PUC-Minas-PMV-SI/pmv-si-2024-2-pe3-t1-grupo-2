@@ -35,7 +35,7 @@ loginForm.addEventListener("submit", async (e) => {
         passwordErrorMsg.style.opacity = 1
         loginForm.senha.classList.add("input-error")
     } else {
-        localStorage.setItem("user_id", foundUser.id)
+        localStorage.setItem("user_id_baoba", foundUser.id)
         location.replace('../index.html')
     }
 })
